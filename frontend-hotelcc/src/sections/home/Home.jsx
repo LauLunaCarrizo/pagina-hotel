@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import "./Home.css"
 import { Carousel } from 'react-responsive-carousel'
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import image1 from '../../assets/Vista-1024x682.jpg'
+import image2 from "../../assets/Restaurant-2.jpg"
+import image3 from "../../assets/planetario3-1024x685.jpg"
+import image4 from "../../assets/2095.jpg"
+import image5 from "../../assets/4916-1024x681.jpg"
+import image6 from "../../assets/4909.jpg"
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -9,6 +16,15 @@ const Home = () => {
     {button:"<",title:"VIVÍ PALERMO",text:"El Hotel Cristoforo Colombo está situado en un lugar de privilegio en el corazón de los bosques de Palermo, en la misma manzana del Centro de Convenciones “La Rural”, próximo a la Embajada de los Estados Unidos, a pocos metros del Campo de Polo, Hipódromo y a escasos minutos del Aeroparque Metropolitano."},
     {button:"-",title:"DISFRUTÁ",text:"Nuestros huéspedes pueden disfrutar de la cocina argentina y mediterránea en el Restaurante “Puerto de Palos” y en el Bar “Timón” degustar una gran variedad de bebidas y platos ligeros."},
     {button:">",title:"SOLUCIONES CORPORATIVAS",text:"Descubra nuestros salones en alquiler donde podrán llevarse a cabo exitosas reuniones de trabajo. Un ambiente acogedor y confortable con múltiples posibilidades de adaptación, que permitirán satisfacer cada uno de sus requerimientos."}
+  ])
+
+  const [imagesCarousel, setImageCarousel] = useState([
+    {src:image1 },
+    {src:image2 },
+    {src:image3 },
+    {src:image4 },
+    {src:image5 },
+    {src:image6 },
   ])
 
   const carouselSettings = {
@@ -67,9 +83,16 @@ const Home = () => {
     </section>
 
     <section className='takeALook'>
+      <article className='takeALookH2'>
+      <h2>ECHA UN VISTAZO</h2>
+      </article>
       <Carousel {...carouselSettings} autoPlay={true} interval={3000} infiniteLoop={true}>
         {
-
+          imagesCarousel.map((e,i)=>(
+            <div key={i}>
+              <img src={e.src} alt="" />
+            </div>
+          ))
         }
       </Carousel>
     </section>
