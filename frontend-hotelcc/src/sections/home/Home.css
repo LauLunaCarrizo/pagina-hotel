@@ -20,7 +20,8 @@
     border-bottom-left-radius: 15px;
     display: flex;
     justify-content: center;
-    background-color: #00bb2d;
+    background-color: #E6CB6A;
+    color: black;
     margin-bottom: 30px ;
 }
 .bookingImage{

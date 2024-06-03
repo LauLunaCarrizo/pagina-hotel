@@ -10,7 +10,7 @@ const Header = ({setRooms}) => {
     <section className='navBarImage'>
       <img src="https://www.hotelcc.com.ar/wp-content/uploads/2013/12/Logo_w.png" alt="" className='hotelImage'/>
     </section>
-<hr className='footerHr'/>
+<hr className='headerHr'/>
     <section>
       <div className='navBarInfo'>
         <label>telefono:(54-11) 4778-4900 </label>
