@@ -1,0 +1,15 @@
+#map {
+	height: 500px;
+	width: 100%;
+}
+
+.LocationInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.LocationInfoImage{
+    background-color: rgb(47, 52, 56);
+    margin: 10px;
+    width: 600px;
+}

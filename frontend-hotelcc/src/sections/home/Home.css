@@ -1,0 +1,101 @@
+.hotelFrontImage{
+    width: 90%;
+    height: auto;
+}
+
+.background{
+    background-color: rgb(68, 68, 94);
+    border-top-left-radius: 20px;
+    width: 100%;
+}
+
+.sectionHome{
+    display: flex;
+    justify-content: center;
+}
+
+.bookingSection{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: #00bb2d;
+    margin-bottom: 30px ;
+}
+.bookingImage{
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.characteristicCarousel{
+    text-align: center;
+    color: #E6CB6A;
+    margin-bottom: 30px ;
+    border-radius: 15px;
+}
+
+.whyUsSection{
+    display: flex;
+    justify-content: center;
+    background-color: #E6CB6A;
+    color: black;
+    margin-top: 30px ;
+    margin-bottom: 30px ;
+}
+
+.whyUsContainer{
+    display: flex;
+    width: 670px;
+    overflow-x:auto;
+    scrollbar-width: auto;
+    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+    margin-top: 10px ;
+    margin-bottom: 30px ;
+    margin-left: 50px;
+    margin-right: 50px;
+    min-height: 200px; 
+}
+.whyUsCard{
+    flex: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: #665A2F;   
+    color: white; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 300px;
+    overflow-y: auto;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 15px;
+    scrollbar-width: none;
+}
+
+.articleHome{
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .hotelFrontImage{
+        width: 100%;
+    }
+    .bookingSection{
+        width: 100%;
+        background-color: #E6CB6A;
+        color: black;
+    }
+    .whyUsSection{
+        width: 100%;
+        border-top-left-radius: 20px;
+    }
+    .whyUsContainer{
+        width: 180px;
+        height: 400px;
+    }
+    .whyUsCard{
+        width: 150px;
+        height: fit-content;
+    }
+}

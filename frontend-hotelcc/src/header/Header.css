@@ -1,0 +1,115 @@
+.header{
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+ padding-top: 30px;   
+ padding-bottom: 30px;
+ background-color: none;
+}
+
+.hotelImage{
+    height: 80px;
+    width: 200px;
+    margin-left: 20px;
+}
+
+.navBarImage{
+    margin: 10px;
+}
+
+.navBarInfo{
+    text-align: right;
+    margin-right: 30px;
+}
+
+.navItem{
+    margin: 10px;
+    color: white
+}
+
+.navMenu{
+    position: relative;
+    display: inline-block;
+}
+.navMenu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navMenu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.navMenu-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.navMenu:hover .navMenu-content {
+    display: block;
+}
+
+.navToggle{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .navBarInfo{
+        text-align: center;
+        margin-left: 40px;
+    }
+    .hotelImage{
+        height: 80px;
+        width: 200px;
+    }
+    .navBarButtons{
+        position:absolute;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height:fit-content;
+        transition: 0.3s ease all;
+        top: 9px;
+        left: 0;
+        background-color: #E6CB6A;
+        transform: translateX(-100%);
+    }
+    .navBarButtons.open{
+        transform: translateX(0) !important;
+    }
+    .navToggle{
+        display: flex !important;
+        flex-direction: column;
+        margin: 15px;
+        margin-left: 340px;
+        right: 0;
+    }
+    .navToggle span{
+        width: 30px;
+        height: 4px;
+        background-color: aliceblue;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        transform-origin: 5px 0px;
+        transition: all 0.2s linear;
+    }
+    .navToggle.open > span{
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+    .navToggle.open > span:nth-child(2){
+        display: none;
+    }
+    .navToggle.open > span:nth-child(3){
+        transform: rotate(-45deg) translate(-5px, 1px);
+    }
+}

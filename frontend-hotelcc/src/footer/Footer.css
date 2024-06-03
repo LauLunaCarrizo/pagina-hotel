@@ -1,0 +1,34 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #665A2F;    
+    width: 100%;
+    position: absolute;
+}
+.footerHr{
+    background-color: #E6CB6A;
+    height: 3px;
+    width: 90%;
+}
+.leftSection{
+    padding-left: 20px;
+}
+.rightSection{
+    padding-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer{
+        width: 96%;
+        display: block;
+    }
+    .leftSection{
+        text-align: center;
+    }
+    .rightSection{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,12 @@
+.aboutUs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutUsImage{
+    margin: 20px;
+    height: 600px;
+    width: 80%;
+    background-color: blueviolet;
+
+}

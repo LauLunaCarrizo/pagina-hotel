@@ -1,0 +1,53 @@
+.contactUs{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 500px;
+    background-color: rgb(64, 129, 185);
+    width: 600px;
+    border-radius: 15px;
+}
+
+.contactUsForm{
+    margin-left: 20px;
+}
+
+
+.contactUsInput{
+    background-color:rgb(72, 76, 80);
+    border: none;
+}
+
+.contactUsButton{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contactUsInfo{
+    width: 200px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(22, 93, 155);
+    padding: 60px;
+    padding-top: 10px;
+}
+
+.pinterestIcon{
+    height: 40px;
+}
+.linkedInIcon{
+    height: 40px;
+}
+.googlePlusIcon{
+    height: 40px;
+}
+.qrImage{
+    height: 100px;
+}
