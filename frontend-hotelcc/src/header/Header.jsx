@@ -20,15 +20,15 @@ const Header = ({setRooms}) => {
         <div className="navMenu">
         <NavLink to={"/rooms"} className="navItem">HABITACIONES</NavLink>
           <div className="navMenu-content">
-            <a onClick={setRooms("Estandar")}>Habitaciones Estandar</a>
-            <a onClick={setRooms("Superior")}>Habitaciones Superior</a>
-            <a onClick={setRooms("Ejecutivas")}>Habitaciones Ejecutivas</a>
-            <a onClick={setRooms("Amadeus")}>Habitación Amadeus</a>
-            <a onClick={setRooms("Junior")}>Suite Junior</a>
-            <a onClick={setRooms("Honeymoon")}>Honeymoon Suite</a>
-            <a onClick={setRooms("Diplomatica")}>Suite Diplomática</a>
-            <a onClick={setRooms("ADA")}>ADA Habitaciones para Discapacitados</a>
-            <a onClick={setRooms("Colombo")}>Suite Colombo</a>
+            <a onClick={()=>setRooms("Estandar")}>Habitaciones Estandar</a>
+            <a onClick={()=>setRooms("Superior")}>Habitaciones Superior</a>
+            <a onClick={()=>setRooms("Ejecutivas")}>Habitaciones Ejecutivas</a>
+            <a onClick={()=>setRooms("Amadeus")}>Habitación Amadeus</a>
+            <a onClick={()=>setRooms("Junior")}>Suite Junior</a>
+            <a onClick={()=>setRooms("Honeymoon")}>Honeymoon Suite</a>
+            <a onClick={()=>setRooms("Diplomatica")}>Suite Diplomática</a>
+            <a onClick={()=>setRooms("ADA")}>ADA Habitaciones para Discapacitados</a>
+            <a onClick={()=>setRooms("Colombo")}>Suite Colombo</a>
           </div>
         </div>
         <NavLink to={"/location"} className="navItem">UBICACIÓN</NavLink>

@@ -32,6 +32,7 @@
 .characteristicCarousel{
     text-align: center;
     color:black;
+    font-size: larger;
     margin-bottom: 30px ;
     border-radius: 15px;
 }
@@ -47,7 +48,7 @@
 
 .whyUsContainer{
     display: flex;
-    width: 670px;
+    /* width: 700px; */
     overflow-x:auto;
     scrollbar-width: auto;
     scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
@@ -62,16 +63,20 @@
     flex: none;
     flex-direction: column;
     text-align: center;
-    background-color: #665A2F;   
-    color: white; 
+    background: #c0a95c;  
+    font-size:large;
+    color: black; 
     margin-top: 30px;
     margin-bottom: 30px;
     width: 300px;
+    min-height: 254px;
     overflow-y: auto;
     margin: 10px;
     padding: 5px;
-    border-radius: 15px;
+    border-radius: 30px;
     scrollbar-width: none;
+    box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
 }
 
 .articleHome{
