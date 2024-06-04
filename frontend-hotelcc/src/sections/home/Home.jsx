@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import "./Home.css"
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import entrance from '../../assets/frente-cristoforo-colombo-hotel-cc-1024x362.jpg'
+import entrance2 from '../../assets/800x600.jpg'
 import image1 from '../../assets/Vista-1024x682.jpg'
 import image2 from "../../assets/Restaurant-2.jpg"
 import image3 from "../../assets/planetario3-1024x685.jpg"
@@ -52,7 +54,8 @@ const Home = () => {
   return (<>
   <div className='home'>
     <section>
-      <img src="https://www.hotelcc.com.ar/wp-content/uploads/2014/06/15-370x246.jpg" alt="" className='hotelFrontImage'/>
+      <img src={entrance2} alt="" className='hotelFrontImage2'/>
+      <img src={entrance} alt="" className='hotelFrontImage'/>
     </section>
     <div className='background'>
 
