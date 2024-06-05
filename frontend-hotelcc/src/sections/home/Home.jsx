@@ -53,9 +53,9 @@ const Home = () => {
 
   return (<>
   <div className='home'>
-    <section>
-      <img src={entrance2} alt="" className='hotelFrontImage2'/>
-      <img src={entrance} alt="" className='hotelFrontImage'/>
+    <section className='hotelFrontImage'>
+      {/* <img src={entrance2} alt="" className='hotelFrontImage2'/>
+      <img src={entrance} alt="" className='hotelFrontImage'/> */}
     </section>
     <div className='background'>
 

@@ -1,6 +1,11 @@
 .hotelFrontImage{
     width: 100%;
-    height: auto;
+    background-attachment: fixed;
+    background-image: url("../../assets/800x600-580x328.jpg");
+    background-size: contain;
+    background-repeat:repeat-y;
+    background-position-y: 40px;
+    height: 23vh;
 }
 
 .background{
@@ -88,7 +93,6 @@
 .takeALookH2{
     text-align: center;
     background-color: #E6CB6A;
-    border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
     height: 60px;
     color: black;
@@ -103,6 +107,7 @@
     }
     .hotelFrontImage2{
         width: 100%;
+        display: flex;
     }
     .bookingSection{
         width: 100%;
@@ -112,6 +117,7 @@
     .whyUsSection{
         width: 100%;
         border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
     .whyUsContainer{
         width: 290px;
@@ -124,7 +130,7 @@
     .takeALookH2{
         text-align: center;
         background-color: #E6CB6A;
-        border-bottom-left-radius: 15px;
+        border-top-right-radius: 15px;
         border-top-left-radius: 15px;
         height: 75px;
         color: black;

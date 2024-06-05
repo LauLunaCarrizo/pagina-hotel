@@ -93,6 +93,9 @@
         background-color: #E6CB6A;
         transform: translateX(-100%);
     }
+    .navItem{
+        color: black;
+    }
     .navBarButtons.open{
         transform: translateX(0) !important;
     }

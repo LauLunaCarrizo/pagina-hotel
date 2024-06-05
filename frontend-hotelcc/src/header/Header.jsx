@@ -31,7 +31,9 @@ const Header = ({setRooms}) => {
             <a onClick={()=>setRooms("Colombo")}>Suite Colombo</a>
           </div>
         </div>
-        <NavLink to={"/location"} className="navItem">UBICACIÓN</NavLink>
+        <NavLink to={"/location"} className="navItem">
+          
+          UBICACIÓN</NavLink>
         <NavLink to={"/services"} className="navItem">SERVICIOS</NavLink>
         <NavLink to={"/aboutUs"} className="navItem">CONOCENOS</NavLink>
         <NavLink to={"/gallery"} className="navItem">GALERIA DE FOTOS</NavLink>
